@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Night Tokyo — an independent visual journal of neon streets, Japanese car culture, and the city after dark.">
+  <meta name="theme-color" content="#101110">
+  <title>Night Tokyo — The city comes alive after dark.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Bootstrap first; our stylesheet follows so the theme can override it. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand brand d-flex align-items-center gap-2" href="#home" aria-label="Night Tokyo home">
+          <span class="brand-symbol" aria-hidden="true">N<span>↗</span></span>
+          <span>NIGHT<br>TOKYO<span class="brand-period">.</span></span>
+        </a>
+        <span class="nav-edition d-none d-md-inline-flex ms-auto me-4">AN AFTER-HOURS JOURNAL</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4 py-3 py-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#districts">The districts</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">The feeling</a></li>
+            <li class="nav-item"><a class="nav-link" href="#garage">The garage</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-accent" href="#field-notes">Field notes <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- TASK 2: Bootstrap containers, rows, columns and display utilities. -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-9 col-xl-8">
+            <p class="eyebrow hero-eyebrow"><span class="live-dot" aria-hidden="true"></span> TOKYO, JAPAN <span class="hero-divider">/</span> MIDNIGHT ISSUE</p>
+            <h1 id="hero-title">THE CITY<br>COMES ALIVE<br><span>AFTER DARK.</span></h1>
+            <p class="hero-description">Follow the neon. Find the side streets.<br>A love letter to Tokyo when the sun goes down.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-acid" href="#districts">Find your Tokyo <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-outline-light" href="#garage">Enter the garage <span aria-hidden="true">→</span></a>
+            </div>
+            <p class="mobile-note d-md-none mt-4 mb-0">One city. A thousand different nights.</p>
+          </div>
+        </div>
+        <div class="hero-footer row align-items-center g-3">
+          <div class="col-6 col-md-4"><span class="tiny-label">ISSUE 001</span><br><span class="hero-footer-title">Beyond the daylight.</span></div>
+          <div class="col-md-4 text-md-center d-none d-md-block"><span class="tiny-label">STREETS / CULTURE / MACHINES</span></div>
+          <div class="col-6 col-md-4 text-end"><a class="scroll-link" href="#districts">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASK 1: This entire section uses custom classes only, never Bootstrap. -->
+    <section id="districts" class="districts-section" aria-labelledby="districts-title">
+      <div class="district-shell">
+        <div class="district-heading">
+          <div>
+            <p class="section-kicker">01 / PICK A DIFFERENT PACE</p>
+            <h2 id="districts-title">THREE DISTRICTS.<br>THREE DIFFERENT WORLDS.</h2>
+          </div>
+          <p class="district-intro">Big-screen energy. Backstreet quiet.<br>Find the version of Tokyo that feels like you.</p>
+        </div>
+        <div class="district-grid">
+          <article class="district-card">
+            <img src="assets/shinjuku.jpg" alt="Illuminated signs and a narrow street in Tokyo at night" loading="lazy" width="900" height="675">
+            <div class="district-meta"><span>THE NEON HEART</span><span>01</span></div>
+            <h3>SHINJUKU</h3>
+            <p>Layers of light, tiny side streets, and the feeling that the night has only just started.</p>
+            <span class="district-tag">NEON LIGHTS / SIDE STREETS</span>
+          </article>
+          <article class="district-card">
+            <img src="assets/shibuya.jpg" alt="Tokyo city lights and busy streets after sunset" loading="lazy" width="900" height="675">
+            <div class="district-meta"><span>THE CITY IN MOTION</span><span>02</span></div>
+            <h3>SHIBUYA</h3>
+            <p>A meeting of people, sound, and street style. Stand still for a second. Take it all in.</p>
+            <span class="district-tag">STREET STYLE / BIG-CITY ENERGY</span>
+          </article>
+          <article class="district-card">
+            <img src="assets/akihabara.jpg" alt="Colorful illuminated buildings and signs in Tokyo" loading="lazy" width="900" height="675">
+            <div class="district-meta"><span>THE ELECTRIC ESCAPE</span><span>03</span></div>
+            <h3>AKIHABARA</h3>
+            <p>Arcade nostalgia, bold colors, and entire worlds behind a shop window. Stay curious.</p>
+            <span class="district-tag">GAME CULTURE / ELECTRIC COLOR</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASK 2: text is first on mobile; responsive ordering moves it right on desktop. -->
+    <section id="about" class="about-section section-space" aria-labelledby="about-title">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-6 order-1 order-lg-2">
+            <p class="section-kicker">02 / MORE THAN A POSTCARD</p>
+            <h2 id="about-title" class="section-title">GET A LITTLE<br><span class="acid-text">LOST.</span> FIND<br>SOMETHING GOOD.</h2>
+            <p class="body-copy mt-4">Tokyo is more than its brightest intersection. It is the glow of a vending machine, the last song from an upstairs record shop, and a quiet street one turn away from the noise.</p>
+            <p class="body-copy">This journal is for the details. The unexpected color. The beautifully ordinary. The moments you cannot fit on a checklist.</p>
+            <a class="text-link mt-3" href="#field-notes">A few notes for the night <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <figure class="city-figure mb-0">
+              <img class="img-fluid" src="assets/street.jpg" alt="A close-up of glowing neon signs in Shinjuku after dark" loading="lazy" width="1100" height="1650">
+              <figcaption class="d-flex justify-content-between gap-3"><span>TAKE THE LONG WAY HOME.</span><span aria-hidden="true">↗</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="garage" class="garage-section section-space" aria-labelledby="garage-title">
+      <div class="container">
+        <div class="row align-items-end mb-4 mb-lg-5 g-3">
+          <div class="col-12 col-lg-8"><p class="section-kicker">03 / BUILT, NOT BOUGHT INTO</p><h2 id="garage-title" class="section-title">MIDNIGHT MACHINES.</h2></div>
+          <div class="col-12 col-lg-4"><p class="body-copy mb-0">A little obsession. A lot of character.<br>Our love letter to Japanese car culture.</p></div>
+        </div>
+        <!-- 12/12 columns on phones, 6/12 on tablets, 4/12 on laptops. -->
+        <div class="row g-4 garage-grid">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card garage-card h-100">
+              <img src="assets/garage-skyline.jpg" class="card-img-top" alt="White Nissan Skyline R34 reflected in a puddle" loading="lazy" width="1100" height="619">
+              <div class="card-body d-flex flex-column">
+                <p class="car-category">01 / THE MIDNIGHT ICON</p><h3 class="card-title">NISSAN SKYLINE R34</h3>
+                <p class="card-text">Sharp lines. A familiar silhouette. Some cars make an impression before they make a sound.</p>
+                <button class="car-link mt-auto" type="button" data-bs-toggle="modal" data-bs-target="#garageModalSkyline">Inside the culture <span aria-hidden="true">↗</span></button>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card garage-card h-100">
+              <img src="assets/garage-supra.jpg" class="card-img-top" alt="White Toyota Supra Mk4 with its distinctive low silhouette" loading="lazy" width="1100" height="733">
+              <div class="card-body d-flex flex-column">
+                <p class="car-category">02 / ANALOG SOUL</p><h3 class="card-title">TOYOTA SUPRA MK4</h3>
+                <p class="card-text">Tactile switches, purposeful design, and a connection that does not need a touchscreen.</p>
+                <button class="car-link mt-auto" type="button" data-bs-toggle="modal" data-bs-target="#garageModalSupra">Inside the culture <span aria-hidden="true">↗</span></button>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card garage-card h-100">
+              <img src="assets/garage-rx7.jpg" class="card-img-top" alt="White Mazda RX-7 with a dark hood at a parking area" loading="lazy" width="1100" height="897">
+              <div class="card-body d-flex flex-column">
+                <p class="car-category">03 / BUILT TO BE YOURS</p><h3 class="card-title">MAZDA RX-7</h3>
+                <p class="card-text">The wheels, the color, the smallest finishing touch. A build is a portrait of its owner.</p>
+                <button class="car-link mt-auto" type="button" data-bs-toggle="modal" data-bs-target="#garageModalRx7">Inside the culture <span aria-hidden="true">↗</span></button>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="garage-caption mt-4 mb-0">AN APPRECIATION OF DESIGN, CRAFT, AND THE PEOPLE BEHIND THE BUILDS.</p>
+      </div>
+    </section>
+
+    <section id="field-notes" class="notes-section section-space" aria-labelledby="notes-title">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-12 col-lg-5"><p class="section-kicker">04 / BEFORE YOU WANDER</p><h2 id="notes-title" class="section-title">A GOOD NIGHT.<br>A FEW NOTES.</h2><p class="body-copy mt-3">Less of an itinerary.<br>More of a state of mind.</p><span class="notes-stamp d-none d-lg-inline-block" aria-hidden="true">STAY<br>CURIOUS ↗</span></div>
+          <div class="col-12 col-lg-7">
+            <div class="accordion accordion-flush" id="nightNotes">
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#noteOne" aria-expanded="true" aria-controls="noteOne"><span class="note-number">01</span> What is Night Tokyo?</button></h3>
+                <div id="noteOne" class="accordion-collapse collapse show" data-bs-parent="#nightNotes"><div class="accordion-body">An independent student-made visual journal about Tokyo after dark. It brings together city atmosphere, district portraits, and Japanese car culture. Think of it as a mood board you can wander through.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#noteTwo" aria-expanded="false" aria-controls="noteTwo"><span class="note-number">02</span> Where should I start exploring?</button></h3>
+                <div id="noteTwo" class="accordion-collapse collapse" data-bs-parent="#nightNotes"><div class="accordion-body">Start with a feeling: Shinjuku for layered neon, Shibuya for motion and street style, or Akihabara for electric color and game culture. The district cards are editorial impressions, not a live itinerary or a list of current opening hours.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#noteThree" aria-expanded="false" aria-controls="noteThree"><span class="note-number">03</span> How do I notice the smaller details?</button></h3>
+                <div id="noteThree" class="accordion-collapse collapse" data-bs-parent="#nightNotes"><div class="accordion-body">Slow down. Look for a reflection instead of a skyline, a doorway instead of a landmark, or a single color repeated along a street. If you take photographs, keep paths clear and ask before photographing someone up close.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#noteFour" aria-expanded="false" aria-controls="noteFour"><span class="note-number">04</span> What is the garage all about?</button></h3>
+                <div id="noteFour" class="accordion-collapse collapse" data-bs-parent="#nightNotes"><div class="accordion-body">The garage celebrates the visual side of Japanese car culture: silhouettes, thoughtful details, and personal expression. Open a card to read a short editorial on what makes each part of that culture interesting.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-end g-4 pb-4">
+        <div class="col-12 col-md-8"><p class="section-kicker">SAME CITY. ANOTHER SIDE.</p><a class="footer-title" href="#home">SEE YOU AFTER DARK<span aria-hidden="true">↗</span></a></div>
+        <div class="col-12 col-md-4 text-md-end"><a class="text-link" href="#home">Back to the top ↑</a></div>
+      </div>
+      <div class="row footer-bottom g-3">
+        <div class="col-12 col-md-6"><span>© 2026 NIGHT TOKYO. A STUDENT VISUAL JOURNAL.</span></div>
+        <div class="col-12 col-md-6 text-md-end"><a href="assets/CREDITS.md">Photography &amp; credits ↗</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three modals for garage cards — 100% Bootstrap data-attributes, zero custom JS -->
+  <div class="modal fade" id="garageModalSkyline" tabindex="-1" aria-labelledby="skylineModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="section-kicker mb-0">FROM THE NIGHT TOKYO GARAGE</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 p-md-5">
+          <p class="car-category">01 / THE MIDNIGHT ICON</p>
+          <h2 id="skylineModalTitle" class="section-title">NISSAN SKYLINE R34</h2>
+          <p class="body-copy mt-4">Sharp lines, a legendary twin-turbo inline-six, and an unmistakable midnight presence. From highway runs across the Bayshore Route to underground meetings under the fluorescent garage lights, the R34 GT-R represents an era of Japanese engineering where mechanical purity and aerodynamic poise created a lasting worldwide icon.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-acid" data-bs-dismiss="modal">Back to the garage <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="garageModalSupra" tabindex="-1" aria-labelledby="supraModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="section-kicker mb-0">FROM THE NIGHT TOKYO GARAGE</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 p-md-5">
+          <p class="car-category">02 / ANALOG SOUL</p>
+          <h2 id="supraModalTitle" class="section-title">TOYOTA SUPRA MK4</h2>
+          <p class="body-copy mt-4">A driver-focused cockpit, tactile switchgear, and the legendary 2JZ-GTE powerplant. The MK4 Supra is an uncompromising tribute to mechanical emotion—built in an era where driving was purely analog, responsive to every pedal stroke, and free of unnecessary digital filtering.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-acid" data-bs-dismiss="modal">Back to the garage <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="garageModalRx7" tabindex="-1" aria-labelledby="rx7ModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <p class="section-kicker mb-0">FROM THE NIGHT TOKYO GARAGE</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 p-md-5">
+          <p class="car-category">03 / BUILT TO BE YOURS</p>
+          <h2 id="rx7ModalTitle" class="section-title">MAZDA RX-7</h2>
+          <p class="body-copy mt-4">The lightweight twin-rotary layout, perfectly balanced 50:50 weight distribution, and flowing timeless body lines. The FD RX-7 is more than a sportscar—it is a personal canvas for its builder, demanding devotion, craftsmanship, and a deep appreciation for the art of tuning.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-acid" data-bs-dismiss="modal">Back to the garage <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Setup requirement: Bootstrap 5.3 JS bundle from CDN before </body> (no custom JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

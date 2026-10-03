@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "viewports": [
+    {
+      "width": 375,
+      "customColumns": 1,
+      "bootstrapColumns": 1,
+      "horizontalOverflow": false,
+      "headingSize": "44px",
+      "aboutTextFirstOnPhone": true,
+      "aboutImageFirstOnDesktop": false,
+      "phoneHintVisible": true,
+      "editionVisible": false,
+      "navbarToggleVisible": true,
+      "allImagesLoaded": true,
+      "localFontsLoaded": true,
+      "missingAnchors": []
+    },
+    {
+      "width": 768,
+      "customColumns": 2,
+      "bootstrapColumns": 2,
+      "horizontalOverflow": false,
+      "headingSize": "53.6px",
+      "aboutTextFirstOnPhone": true,
+      "aboutImageFirstOnDesktop": false,
+      "phoneHintVisible": false,
+      "editionVisible": true,
+      "navbarToggleVisible": true,
+      "allImagesLoaded": true,
+      "localFontsLoaded": true,
+      "missingAnchors": []
+    },
+    {
+      "width": 1280,
+      "customColumns": 3,
+      "bootstrapColumns": 3,
+      "horizontalOverflow": false,
+      "headingSize": "60.8px",
+      "aboutTextFirstOnPhone": false,
+      "aboutImageFirstOnDesktop": true,
+      "phoneHintVisible": false,
+      "editionVisible": true,
+      "navbarToggleVisible": false,
+      "allImagesLoaded": true,
+      "localFontsLoaded": true,
+      "missingAnchors": []
+    }
+  ],
+  "interactions": {
+    "mobileNavbar": "Passed: collapses on small screens, toggles open/close, and links navigate to sections.",
+    "accordion": "Passed: panels open and close; only one panel is open at a time.",
+    "garageModals": "Passed: all three buttons open the corresponding modal natively.",
+    "keyboardDismiss": "Passed: Escape dismisses the modal and returns keyboard focus.",
+    "pureHTMLCSS": "Passed: Zero custom JavaScript; all components work via standard HTML and Bootstrap data-attributes."
+  },
+  "consoleErrors": [],
+  "failedRequests": [],
+  "environmentRequests": [
+    {
+      "host": "gc.kis.v2.scr.kaspersky-labs.com",
+      "error": "net::ERR_ABORTED",
+      "source": "Installed antivirus, not project code"
+    },
+    {
+      "host": "gc.kis.v2.scr.kaspersky-labs.com",
+      "error": "net::ERR_ABORTED",
+      "source": "Installed antivirus, not project code"
+    },
+    {
+      "host": "gc.kis.v2.scr.kaspersky-labs.com",
+      "error": "net::ERR_ABORTED",
+      "source": "Installed antivirus, not project code"
+    }
+  ],
+  "additionalWidthsWithoutOverflow": [
+    320,
+    360,
+    576,
+    991,
+    992,
+    1440
+  ]
+}

@@ -1,0 +1,155 @@
+/* NIGHT TOKYO — shared theme. All layout starts with the phone size. */
+@font-face { font-family: "Barlow Condensed"; src: url("assets/fonts/barlow-condensed-700.woff2") format("woff2"); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: "Space Grotesk"; src: url("assets/fonts/space-grotesk-variable.woff2") format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; }
+
+:root {
+  --ink: #101110;
+  --panel: #191b18;
+  --paper: #f0f1e9;
+  --muted: #a4a79e;
+  --acid: #d5fc59;
+  --line: #34362f;
+  --display: "Barlow Condensed", Impact, "Arial Narrow", sans-serif;
+  --body: "Space Grotesk", Arial, sans-serif;
+  --bs-body-bg: var(--ink);
+  --bs-body-color: var(--paper);
+  --bs-body-font-family: var(--body);
+  --bs-border-color: var(--line);
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--ink); color: var(--paper); font-family: var(--body); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+a, button { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--acid); outline-offset: 5px; }
+section { scroll-margin-top: 1.5rem; }
+::selection { background: var(--acid); color: var(--ink); }
+.skip-link { display: block; height: 0; overflow: hidden; text-align: center; background: var(--acid); color: var(--ink); }
+.skip-link:focus { height: auto; padding: 1rem; }
+.container { --bs-gutter-x: 2.5rem; }
+.section-space { padding-block: 4.5rem; }
+.section-kicker, .eyebrow, .tiny-label { font-size: .65rem; font-weight: 600; letter-spacing: .14em; line-height: 1.8; }
+.section-kicker { margin-bottom: 1rem; color: var(--acid); }
+.section-title { font-family: var(--display); font-size: clamp(2.8rem, 5.4vw, 4.6rem); font-weight: 700; line-height: .98; letter-spacing: -.015em; margin: 0; }
+.acid-text { color: var(--acid); }
+.body-copy { color: var(--muted); font-size: .93rem; line-height: 1.8; }
+.text-link { display: inline-flex; align-items: center; gap: 1.75rem; font-size: .8rem; padding-block: .5rem; border-bottom: 1px solid var(--acid); }
+.text-link:hover { color: var(--acid); }
+
+/* Bootstrap navbar; no fixed or absolute positioning is used for page layout. */
+.site-header { background: var(--ink); border-bottom: 1px solid var(--line); }
+.navbar { padding-block: 1rem; }
+.brand { font-size: .9rem; font-weight: 700; line-height: .95; letter-spacing: -.05em; }
+.brand-symbol { padding: .45rem .35rem; background: var(--acid); color: var(--ink); font-size: 1.55rem; letter-spacing: -.12em; line-height: 1; }
+.brand-symbol span { font-size: 1rem; vertical-align: top; }
+.brand-period { color: var(--acid); }
+.nav-edition { font-size: .54rem; letter-spacing: .13em; color: var(--muted); }
+.navbar-nav .nav-link { font-size: .76rem; color: #d3d5cc; padding-block: .75rem; }
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus, .navbar-nav .nav-link-accent { color: var(--acid); }
+.navbar-toggler { border-color: var(--line); border-radius: 0; font-size: 1rem; padding: .45rem; }
+.navbar-toggler:focus { box-shadow: 0 0 0 .18rem #d5fc5940; }
+
+/* Hero content stays in normal document flow over a photographic background. */
+.hero { background-color: #152322; background-image: linear-gradient(90deg, rgba(8,13,13,.93) 0%, rgba(8,13,13,.66) 47%, rgba(8,13,13,.17) 100%), linear-gradient(0deg, rgba(8,13,13,.93), transparent 55%), url("assets/hero.jpg"); background-size: cover; background-position: center; padding-top: 3.5rem; }
+.hero-eyebrow { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; color: var(--paper); font-size: .59rem; margin-bottom: 1.75rem; }
+.live-dot { display: inline-block; padding: .22rem; background: var(--acid); border-radius: 50%; box-shadow: 0 0 1rem #d5fc5960; }
+.hero-divider { color: #727b74; }
+.hero h1 { font-family: var(--display); font-size: clamp(4.1rem, 11vw, 8.9rem); line-height: .89; font-weight: 700; letter-spacing: -.02em; margin-bottom: 1.5rem; }
+.hero h1 > span { color: var(--acid); }
+.hero-description { font-size: .88rem; line-height: 1.8; color: #d0d4c9; }
+.btn { border-radius: 0; font-size: .74rem; padding: .9rem 1.15rem; font-weight: 600; }
+.btn span { margin-left: 1.35rem; }
+.btn-acid { --bs-btn-bg: var(--acid); --bs-btn-color: var(--ink); --bs-btn-border-color: var(--acid); --bs-btn-hover-bg: #e3ff8a; --bs-btn-hover-color: var(--ink); --bs-btn-hover-border-color: #e3ff8a; --bs-btn-active-bg: #c5ed43; --bs-btn-active-color: var(--ink); }
+.btn-outline-light { --bs-btn-color: var(--paper); --bs-btn-border-color: #d3d8c855; --bs-btn-hover-bg: var(--paper); --bs-btn-hover-color: var(--ink); }
+.mobile-note { font-size: .69rem; color: #b8c0b6; }
+.hero-footer { margin-top: 3.5rem; padding-top: 1.3rem; padding-bottom: 1.8rem; border-top: 1px solid #c4d0ba38; }
+.tiny-label { font-size: .54rem; color: #bcc4b7; }
+.hero-footer-title { font-size: .75rem; }
+.scroll-link { font-size: .52rem; letter-spacing: .09em; }
+.scroll-link span { margin-left: .5rem; color: var(--acid); font-size: 1.25rem; }
+
+/* TASK 1 — self-contained custom section. No Bootstrap selectors/utilities. */
+.districts-section { padding-block: 4.5rem; }
+.district-shell { margin-inline: auto; padding-inline: 1.25rem; }
+.district-heading { display: flex; flex-direction: column; gap: 1.15rem; margin-bottom: 2rem; }
+.district-heading h2 { font-family: var(--display); font-size: 2.75rem; font-weight: 700; line-height: 1; letter-spacing: -.015em; margin: 0; }
+.district-intro { color: var(--muted); font-size: .85rem; line-height: 1.75; margin: 0; }
+.district-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2.75rem; }
+.district-card { min-width: 0; }
+.district-card img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; filter: saturate(.82); }
+.district-meta { display: flex; justify-content: space-between; gap: .75rem; margin-top: 1.15rem; color: var(--acid); font-size: .58rem; font-weight: 600; letter-spacing: .12em; }
+.district-meta > span:last-child { color: var(--muted); }
+.district-card h3 { margin-top: .6rem; margin-bottom: .6rem; font-family: var(--display); font-size: 2.25rem; font-weight: 700; line-height: 1; }
+.district-card p { color: var(--muted); font-size: .82rem; line-height: 1.75; margin-bottom: 1rem; }
+.district-tag { display: block; border-top: 1px solid var(--line); padding-top: .9rem; font-size: .55rem; letter-spacing: .1em; color: #bec1b7; }
+
+/* Tablet: 2 items per row; heading size, section spacing and grid gap also change. */
+@media (min-width: 768px) {
+  .district-shell { max-width: 720px; }
+  .districts-section { padding-block: 5.5rem; }
+  .district-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem 1.5rem; }
+  .district-heading h2 { font-size: 3.35rem; }
+  .district-heading { margin-bottom: 2.5rem; }
+}
+
+/* Laptop: 3 items per row and a horizontal section heading. */
+@media (min-width: 992px) {
+  .district-shell { max-width: 960px; }
+  .district-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .district-heading { flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 2rem; }
+  .district-heading h2 { font-size: 3.8rem; }
+  .district-intro { max-width: 25em; }
+}
+
+@media (min-width: 1200px) { .district-shell { max-width: 1140px; } }
+@media (min-width: 1400px) { .district-shell { max-width: 1320px; } }
+
+/* TASK 2 — Bootstrap handles the remaining section grids and responsive order. */
+.about-section { border-top: 1px solid var(--line); background: #151713; }
+.city-figure img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; }
+.city-figure figcaption { padding-top: .9rem; color: var(--muted); font-size: .56rem; letter-spacing: .1em; }
+.city-figure figcaption span:last-child { color: var(--acid); }
+.garage-section { border-bottom: 1px solid var(--line); }
+.garage-card { border: 1px solid var(--line); border-radius: 0; background: var(--panel); }
+.garage-card .card-img-top { border-radius: 0; height: auto; aspect-ratio: 1.5; object-fit: cover; }
+.garage-card .card-body { padding: 1.35rem; }
+.car-category { font-size: .57rem; font-weight: 600; letter-spacing: .12em; color: var(--acid); margin-bottom: .7rem; }
+.garage-card .card-title { font-family: var(--display); font-weight: 700; font-size: 2rem; }
+.garage-card .card-text { font-size: .8rem; line-height: 1.75; color: var(--muted); margin-bottom: 1.5rem; }
+.car-link { display: flex; justify-content: space-between; align-items: center; gap: 1rem; background: transparent; border: 0; border-top: 1px solid var(--line); padding: .95rem 0 0; color: var(--paper); text-align: left; font-size: .74rem; }
+.car-link span { color: var(--acid); font-size: 1rem; }
+.car-link:hover { color: var(--acid); }
+.garage-caption { color: var(--muted); font-size: .55rem; letter-spacing: .1em; }
+.notes-stamp { font-family: var(--display); font-size: 2.35rem; line-height: .95; color: var(--acid); border: 1px solid var(--line); padding: .8rem 1rem; margin-top: 1.5rem; transform: rotate(-7deg); }
+.accordion { --bs-accordion-bg: transparent; --bs-accordion-color: var(--muted); --bs-accordion-border-color: var(--line); --bs-accordion-btn-bg: transparent; --bs-accordion-active-bg: transparent; --bs-accordion-btn-color: var(--paper); --bs-accordion-active-color: var(--acid); --bs-accordion-btn-focus-box-shadow: none; }
+.accordion-button { font-size: .83rem; line-height: 1.5; padding: 1.45rem 0; gap: 1rem; }
+.accordion-button::after { margin-left: auto; }
+.note-number { font-size: .61rem; color: var(--muted); }
+.accordion-body { padding: 0 1.5rem 1.5rem 2rem; font-size: .82rem; line-height: 1.9; }
+.modal-content { border-radius: 0; background: var(--panel); border-color: var(--line); }
+.modal-header, .modal-footer { padding: 1rem 1.5rem; border-color: var(--line); }
+.site-footer { background: var(--acid); padding-top: 2.5rem; color: var(--ink); }
+.site-footer .section-kicker { color: #424b2a; font-size: .56rem; }
+.footer-title { display: flex; align-items: baseline; gap: .75rem; font-family: var(--display); font-size: clamp(2rem, 4.3vw, 3.7rem); font-weight: 700; line-height: 1; }
+.site-footer .text-link { border-color: #687d3c; font-size: .7rem; }
+.site-footer a:hover { color: #425020; }
+.footer-bottom { border-top: 1px solid #1f2c1833; padding-block: 1.3rem; font-size: .51rem; letter-spacing: .07em; }
+
+@media (min-width: 768px) {
+  .section-space { padding-block: 5.5rem; }
+  .hero { padding-top: 4.5rem; }
+  .hero-footer { margin-top: 4rem; }
+  .hero-description { font-size: 1rem; }
+  .scroll-link { font-size: .58rem; }
+}
+@media (min-width: 992px) {
+  .hero { padding-top: 5rem; }
+  .nav-edition { margin-left: 2.5rem !important; margin-right: 1rem !important; }
+  .hero-footer { margin-top: 4.5rem; }
+  .city-figure img { aspect-ratio: .95; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
