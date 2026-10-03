@@ -1,7 +1,76 @@
-node_modules/
-__pycache__/
-.venv/
-*.log
-.DS_Store
-Thumbs.db
+# Archives and submissions (do not upload large archives to repository)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
 NightTokyo_Submission.zip
+
+# Microsoft Office temporary lock files (created when editing report in Word)
+~$*.docx
+~$*.doc
+~$*.xlsx
+~$*.pptx
+
+# Operating System files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE, Editor and Workspace configurations
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+*.bak
+
+# Python environment and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Logs and runtime files
+*.log
+*.tmp
+*.temp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node / Package managers (if any)
+node_modules/
+.npm/
+
+# Testing & Browser automation artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+test-results/
+playwright-report/
+blob-report/
+docs/screenshots/verification-failure.png
+
+# Local environment & secrets
+.env
+.env.local
+.env.*.local
